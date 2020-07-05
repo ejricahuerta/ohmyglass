@@ -22,7 +22,7 @@ jobs:
       uses: garygrossgarten/github-action-scp@v0.5.3
       with:
         local: /home/runner/work/ohmyglass/ohmyglass/deploy/
-        remote: ${{ secrets.DEPLOY_FOLDER }}
+        remote: ${{ secrets.PROD_DEPLOY_FOLDER }}
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
         password: ${{ secrets.SSH_PASSWORD }}
