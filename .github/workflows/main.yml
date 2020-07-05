@@ -15,7 +15,7 @@ jobs:
       with:
         dotnet-version: 3.1.201
     - name: Dotnet Publish
-      run: dotnet publish src/ohmyglass -c Release -o deploy
+      run: dotnet publish src/OhMyGlass -c Release -o deploy
     - name: parent working directory
       run: pwd
     - name: Copy via ssh
