@@ -1,0 +1,45 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+ß
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.img-logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-main {
+  background: rgba(189, 208, 222, 0.5);
+  border: 1px solid #E8E8E8;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.beer-reveal[data-beer-label]:after {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+}
