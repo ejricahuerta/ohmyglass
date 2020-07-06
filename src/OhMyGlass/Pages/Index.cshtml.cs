@@ -17,8 +17,12 @@ namespace OhMyGlass.Pages
             _logger = logger;
         }
 
-        public IActionResult OnGet()
+        public IActionResult OnGet(string password = null)
         {
+            if(!string.IsNullOrEmpty(password) && password.Equals("ohmyglass")){
+                return Page();
+            }
+            
             if(DateTime.Now < DateTime.Parse("July 20,2020")){
                 return LocalRedirect(Url.Content("~/ComingSoon"));
             }
