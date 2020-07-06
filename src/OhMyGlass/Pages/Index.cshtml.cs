@@ -20,7 +20,7 @@ namespace OhMyGlass.Pages
         public IActionResult OnGet()
         {
             if(DateTime.Now < DateTime.Parse("July 20,2020")){
-                return Redirect("~/ComingSoon");
+                return LocalRedirect(Url.Content("~/ComingSoon"));
             }
             return Page();
         }
