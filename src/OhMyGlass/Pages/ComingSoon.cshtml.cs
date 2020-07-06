@@ -8,21 +8,18 @@ using Microsoft.Extensions.Logging;
 
 namespace OhMyGlass.Pages
 {
-    public class IndexModel : PageModel
+    public class ComingSoonModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<ComingSoonModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public ComingSoonModel(ILogger<ComingSoonModel> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult OnGet()
+        public void OnGet()
         {
-            if(DateTime.Now < DateTime.Parse("July 20,2020")){
-                return Redirect("~/ComingSoon");
-            }
-            return Page();
+
         }
     }
 }
