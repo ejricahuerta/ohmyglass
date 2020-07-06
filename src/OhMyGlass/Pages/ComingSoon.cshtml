@@ -16,12 +16,46 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
     <title>OhMyGlass - Coming Soon</title>
+    <style>
+      .bg {
+      /* Location of the image */
+        background-image: url(img/blur.png);
+        position: fixed;
+        width: 100%;
+        filter: opacity(.08);
+        filter: :blur(.5);
+        height: calc(100vh);
+        z-index: -1;
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+        
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+        
+        /* Background image is fixed in the viewport so that it doesn't move when 
+          the content's height is greater than the image's height */
+        background-attachment: fixed;
+        
+        /* This is what makes the background image rescale based
+          on the container's size */
+        background-size: cover;
+        
+        /* Set a background color that will be displayed
+          while the background image is loading */
+        background-color: #ffffff;
+      }
+      .coming-soon{
+        color: rgba(0, 148, 255, 0.32);
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+      }
+    </style>
   </head>
   <body>
-    <section style="height:calc(100vh - 100px);">
+    <div class="bg"></div>
+    <section style="height:calc(100vh);">
       <div class="d-flex h-100 flex-column justify-content-center align-content-center">
         <div class="text-center mt-auto mb-3">
-          <h1>Coming Soon</h1>
+          <h1 class="coming-soon text-uppercase display-2">Coming Soon</h1>
         </div>
         <div class="text-center mb-auto">
             <label class="text-muted d-block">Follow us on:</label>
