@@ -88,7 +88,7 @@
     opacity: 0;
     pointer-events: none;
     position: absolute;
-    top: 70%;
+    top: 60%;
     transform: translate3d(-50%, -50%, 0);
     transition: background .3s, box-shadow .3s, opacity .5s .25s;
     width: 48px;
@@ -130,7 +130,7 @@
     line-height: 1;
     padding: .5rem;
     position: absolute;
-    bottom: 1.5rem;
+    top:70%;
     box-shadow: 0 0 3px rgba(0, 0, 0, .4);
 }
 
