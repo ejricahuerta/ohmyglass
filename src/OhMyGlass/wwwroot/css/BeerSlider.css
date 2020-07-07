@@ -88,7 +88,7 @@
     opacity: 0;
     pointer-events: none;
     position: absolute;
-    top: 80%;
+    top: 85%;
     transform: translate3d(-50%, -50%, 0);
     transition: background .3s, box-shadow .3s, opacity .5s .25s;
     width: 48px;
@@ -153,4 +153,16 @@
 }
 .bg-black{
     background-color:#000000;
+}
+
+
+@media (max-width: 768px) {
+    .beer-handle {
+        top: 50%;
+    }
+    .beer-reveal[data-beer-label]:after,
+    .beer-slider[data-beer-label]:after {
+        top:20%;
+
+    }
 }
