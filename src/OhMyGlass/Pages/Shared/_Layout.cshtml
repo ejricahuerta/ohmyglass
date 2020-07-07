@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="~/css/BeerSlider.css" asp-append-version="true">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
-<body class="bg-black">
+<body>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="@Url.Content("~/img/logo.png")" class="img-logo" alt="~/img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav_collapse" aria-controls="main_nav_collapse_content" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,17 +20,33 @@
         <div class="collapse navbar-collapse" id="main_nav_collapse">
             <ul class="navbar-nav mr-auto text-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#"> 
+                        <h5 class="mb-0">
+                            Home
+                        </h5>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#"> 
+                        <h5 class="mb-0"> 
+                            Services
+                        </h5>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Work</a>
+                    <a class="nav-link" href="#"> 
+                        <h5 class="mb-0"> 
+                            Our Work
+                        </h5>
+                    </a>
                 </li>
             </ul>
             <div class="my-2 my-lg-0 text-center text-white">
-                <a class="btn btn-link btn-lg text-dark" href="tel:000-000-0000">000-000-9999</a>
+                <a class="btn btn-link text-dark" href="tel:000-000-0000">
+                    <h5 class="mb-0">
+                        000-000-9999
+                    </h5>
+                </a>
             </div>
         </div>
     </nav>
