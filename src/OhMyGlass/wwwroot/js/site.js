@@ -6,7 +6,7 @@
         new BeerSlider(this, options);
       });
     };  
-    $('.beer-slider').BeerSlider({start: 25});
+    $('.beer-slider').BeerSlider({start: 75});
     
     $("video").each(function(){ this.volume = 0.5; });
 
