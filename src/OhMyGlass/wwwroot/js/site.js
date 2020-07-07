@@ -10,6 +10,8 @@
   });
   
   $(window).on('load',function () {
-    $('.loading').fadeOut('slow');
-    $('.loading').remove();
+    var removeSelf = function () {
+      $('.loading').remove();
+    }
+    $('.loading').fadeOut(1600,removeSelf);
   })
