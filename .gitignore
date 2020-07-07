@@ -35,3 +35,6 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+src/OhMyGlass/wwwroot/videos/caulkingohmyglass.mp4
+src/OhMyGlass/wwwroot/videos/Ohmyglasswithlogo.mp4
+src/OhMyGlass/wwwroot/videos/omglasshouse.mp4
