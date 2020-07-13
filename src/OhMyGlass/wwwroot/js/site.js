@@ -1,5 +1,6 @@
 ﻿
   $(document).ready(function() {
+    AOS.init();
     $.fn.BeerSlider = function ( options ) {
       options = options || {};
       return this.each(function() {

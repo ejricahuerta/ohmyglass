@@ -4,12 +4,13 @@
     ViewBag.Title = "Home";
 }
 <div class="d-flex justify-content-center align-items-center w-100">
-    <div class="border-0 call-to-action-container position-absolute d-none d-md-block" style="z-index:3;">
+    <div class="border-0 call-to-action-container position-absolute d-none d-md-block" style="z-index:3;" data-aos="fade-up"
+     data-aos-duration="3000">
         <div class="text-center">
             <button class="btn btn-lg px-5 text-uppercase text-white">Book Now</button>
         </div>
-        <h3 class="text-light text-uppercase mt-5 text-center mx-3">You are just few clicks away towards a better view</h3>
-        <p class="lead text-light text-center" >Book for free estimate now!</p>
+        <h3 class="text-light text-uppercase mt-5 text-center mx-3 animate__animated animate__bounce">You are just few clicks away towards a better view</h3>
+        <p class="lead text-light text-center animate__animated animate__bounce">Book for free estimate now!</p>
     </div>
     <div id="beer-slider" class="beer-slider w-100" data-beer-label="after" data-beer-start="25">
         <img src="~/img/toronto.jpeg" alt="Blur Glass">
@@ -18,15 +19,18 @@
         </div>
     </div>
 </div>
-<div class="call-to-action-container bg-blur d-sm-block d-md-none text-center py-5" style="z-index:20;">
+<div class="call-to-action-container bg-blur d-sm-block d-md-none text-center py-5" style="z-index:20;" >
     <div class="text-center">
-        <button class="btn text-light btn-lg px-5 text-uppercase shadow">Book Now</button>
+        <button class="btn text-light btn-lg px-5 text-uppercase shadow" data-aos="fade-up"
+     data-aos-duration="3000">Book Now</button>
     </div>
-    <h3 class="text-uppercase text-light mt-5 text-center mx-3">You are just few clicks away towards a better view</h3>
-    <p class="lead text-center">Book for free estimate now!</p>
+    <h3 class="text-uppercase text-light mt-5 text-center mx-3 animate__animated animate__bounce" data-aos="fade-up"
+     data-aos-duration="3000">You are just few clicks away towards a better view</h3>
+    <p class="lead text-center" data-aos="fade-up"
+     data-aos-duration="3000">Book for free estimate now!</p>
 </div>
 <div class="bg-white p-5">
-    <div class="card rounded-0 border-0 mb-3">
+    <div class="card rounded-0 border-0 mb-3" data-aos="fade-up">
         <div class="card-body text-center">
             <h1 class="card-title text-uppercase font-weight-bold">CLEAR CUT QUALITY</h1>
             <p class="card-text lead">Next time you need reliable glass installation, repair or replacement work for your storefront within the Greater Toronto Area or a free estimate, contact us now! 
@@ -36,9 +40,9 @@
     </div>
 </div>
 <div id="our_services" class="our-services">
-    <h1 class="text-uppercase text-center font-weight-bold my-5">Our Services</h1>
+    <h1 class="text-uppercase text-center font-weight-bold my-5" data-aos="zoom-in">Our Services</h1>
     <div class="d-flex flex-wrap justify-content-center mb-5">
-        <div class="m-3 mb-5">
+        <div class="m-3 mb-5" data-aos="zoom-in-left">
             <h5 class="text-light text-center text-uppercase">Windows and Doors</h5>
             <div class="card card-transparent text-center">
                 <div class="card-body">
@@ -49,9 +53,9 @@
                 </div>
             </div>
         </div>
-        <div class="m-3 mb-5">
+        <div class="m-3 mb-5" data-aos="zoom-in-right">
             <h5 class="text-light text-uppercase text-center">Shower</h5>
-            <div class="card card-transparent text-center">
+            <div class="card card-transparent text-center animated slideInLeft">
                 <div class="card-body">
                     <div class="card-transparent-icon">
                         <i class="fas fa-shower"></i>
@@ -60,9 +64,9 @@
                 </div>
             </div>
         </div>
-        <div class="m-3 mb-5">
+        <div class="m-3 mb-5" data-aos="zoom-in-left">
             <h5 class="text-light text-uppercase text-center">Storefront</h5>
-            <div class="card card-transparent text-center">
+            <div class="card card-transparent text-center animate__animated animate__bounce">
                 <div class="card-body">
                     <div class="card-transparent-icon">
                         <i class="fas fa-store-alt"></i>
@@ -71,9 +75,9 @@
                 </div>
             </div>
         </div>
-        <div class="m-3 mb-5">
+        <div class="m-3 mb-5" data-aos="zoom-in-right">
             <h5 class="text-light text-uppercase text-center">Custom Glass Partition</h5>
-            <div class="card card-transparent text-center">
+            <div class="card card-transparent text-center animate__animated animate__bounce">
                 <div class="card-body">
                     <div class="card-transparent-icon">
                         <i class="fas fa-puzzle-piece"></i>
@@ -82,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div class="m-3 mb-5">
+        <div class="m-3 mb-5" data-aos="zoom-in">
             <h5 class="text-light text-uppercase text-center">Porch Enclosure</h5>
             <div class="card card-transparent text-center">
                 <div class="card-body">
@@ -96,53 +100,22 @@
 
     </div>
 </div>
-
-<div class="bg-white p-5">
-    <div class="card rounded-0 border-0 mb-3">
-        <div class="card-body text-center">
+<div class="bg-light">
+    <div class="card bg-light rounded-0 border-0 mb-3 m-5">
+        <div class="card-body text-center" data-aos="zoom-in">
             <h1 class="card-title text-uppercase font-weight-bold">The Team</h1>
             <p class="card-text lead">We are Young and Professional.</p>
             <p class="card-text">We might look very young but we are trained by the best in the industry. We are looking to grow our team across GTA.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <div class="w-100 mb-5">
-                        <img src="~/img/ben-parker-OhKElOkQ3RE-unsplash.jpg" class="h-100 w-100" alt="ben-parker-OhKElOkQ3RE-unsplash.jpg" />
-                        <h5 class="pt-3">Team Member's Name</h5>
-                        <p class="lead">Team Leader</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="w-100 mb-5">
-                        <img src="~/img/ben-parker-OhKElOkQ3RE-unsplash.jpg" class="h-100 w-100" alt="ben-parker-OhKElOkQ3RE-unsplash.jpg" />
-                        <h5 class="pt-3">Team Member's Name</h5>
-                        <p class="lead">Team Leader</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="w-100 mb-5">
-                        <img src="~/img/ben-parker-OhKElOkQ3RE-unsplash.jpg" class="h-100 w-100" alt="ben-parker-OhKElOkQ3RE-unsplash.jpg" />
-                        <h5 class="pt-3">Team Member's Name</h5>
-                        <p class="lead">Team Leader</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="w-100 mb-5">
-                        <img src="~/img/ben-parker-OhKElOkQ3RE-unsplash.jpg" class="h-100 w-100" alt="ben-parker-OhKElOkQ3RE-unsplash.jpg" />
-                        <h5 class="pt-3">Team Member's Name</h5>
-                        <p class="lead">Team Leader</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
 <div class="bg-white p-5">
     <div class="card rounded-0 border-0 mb-3">
         <div class="card-body text-center">
-            <h1 class="card-title text-uppercase font-weight-bold" id="our_work">Our Work</h1>
-            <p class="card-text lead">We are proud of what we do</p>
+            <h1 class="card-title text-uppercase font-weight-bold" id="our_work" data-aos="fade-up">Our Work</h1>
+            <p class="card-text lead" data-aos="fade-up">We are proud of what we do</p>
             <div class="row">
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4" data-aos="zoom-in-right">
                     <button type="button" class="btn btn-link m-2 shadow p-0" data-toggle="modal" data-target="#videModal" title="play video" data-src="@Url.Content("~/videos/Ohmyglasswithlogo.mp4")">
                         <div class="d-flex h-100 position-absolute justify-content-center">
                             <div class="m-2">
@@ -152,7 +125,7 @@
                         <img class="w-100 rounded" src="@Url.Content("~/img/glassreplacement2.jpg")" alt="">
                     </button>
                 </div>
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4" data-aos="zoom-in-left">
                     <button type="button" class="btn btn-link m-2 shadow p-0" data-toggle="modal" data-target="#videModal" title="play video" data-src="@Url.Content("~/videos/omglasshouse.mp4")">
                         <div class="d-flex h-100 position-absolute justify-content-center">
                             <div class="m-2">
@@ -162,7 +135,7 @@
                         <img class="w-100 rounded" src="@Url.Content("~/img/glassreplacement1.jpg")" alt="">
                     </button>
                 </div>
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4" data-aos="zoom-in">
                     <button type="button" class="btn btn-link m-2 shadow p-0" data-toggle="modal" data-target="#videModal" title="play video" data-src="@Url.Content("~/videos/caulkingohmyglass.mp4")">
                         <div class="d-flex h-100 position-absolute justify-content-center">
                             <div class="m-2">
@@ -172,7 +145,7 @@
                         <img class="w-100 rounded" src="@Url.Content("~/img/caulking.jpg")" alt="">
                     </button>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="zoom-in">
                     <a class="btn btn-link" href="" title="Check out more"><h5 class="mt-3">View More</h5></a>
                 </div>
             </div>
@@ -199,7 +172,7 @@
     </div>
   </div>
 </div>
-<div class="bg-light p-5">
+<div class="bg-light p-5" data-aos="zoom-in">
     <div class="card rounded-0 border-0 mb-3">
         <div class="card-body bg-light text-center">
             <h3 class="card-title text-uppercase font-weight-bold">FOLLOW US</h3>
