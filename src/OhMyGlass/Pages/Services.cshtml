@@ -3,43 +3,59 @@
 @{
     ViewBag.Title = "Services";
 }
-<div class="container">
+<div class="container min-vh-100">
   <h1 class="my-5 text-center w-100">All Services</h1>
   <section class="card-columns m-2">
     <div class="card">
       <img src="@Url.Content("~/img/windows-door-bg.jpg")" class="card-img" alt="...">
       <div class="card-img-overlay">
       <h5 class="card-title text-white">Windows and Doors</h5>
-      <a href="#" class="btn btn-link text-dark stretched-link"></a>
+      <button data-toggle="modal" 
+      data-target="#servicesModal" 
+      data-img="@Url.Content("~/img/windows-door-bg.jpg")" 
+      data-desc="Shattered, cracked glass? Condensation on the inside of your window or door glass panels? Improperly insulated, low-quality glass can be a serious detriment to your home’s energy consumption in the winter and the summer. We offer repairs and replacements of glass features in windows and doors and have the capacity to repair all issues." data-name="Windows and Door" class="btn btn-link text-dark stretched-link"></a>
     </div>
     </div>
     <div class="card">
       <img src="@Url.Content("~/img/storefront-bg.jpg")" class="card-img" alt="...">
       <div class="card-img-overlay">
       <h5 class="card-title text-white">Storefront</h5>
+        <button data-toggle="modal" 
+        data-target="#servicesModal" 
+        data-img="@Url.Content("~/img/storefront-bg.jpg")" 
+        data-name="Storefront" 
+        data-desc="The entrance of your business is the first impression you make with customers, and an attractive storefront is the ideal way to draw potential business to your door. We offer all kinds of repair service and after-hours emergency glass replacement in Scarborough and the entire GTA, and we can quickly have your commercial space looking its absolute best. There’s nothing better than a glass storefront for displaying merchandise and giving potential customers a reason to stop in."
+        class="btn btn-link text-dark stretched-link"></a>
     </div>
     </div>
       <div class="card">
       <img src="@Url.Content("~/img/shower-bg.jpg")" class="card-img" alt="...">
       <div class="card-img-overlay">
       <h5 class="card-title text-white">Shower</h5>
+        <button data-toggle="modal" 
+          data-target="#servicesModal" 
+          data-desc="A bathroom upgrade can enhance your enjoyment of your home and deliver a healthy return on investment. We’ll take measurements on site and install sparkling new seamless glass shower doors. We also offer a wide array of fixtures that let you customize the look to suit your decor and taste." 
+          data-img="@Url.Content("~/img/shower-bg.jpg")" 
+          data-name="Shower" class="btn btn-link text-dark stretched-link"></button>
     </div>
     </div>
     <div class="card">
       <img src="@Url.Content("~/img/porch-bg.jpg")" class="card-img" alt="...">
-  <div class="card-img-overlay">
-      <h5 class="card-title text-white">Porch Enclosure</h5>
-    </div>
+      <div class="card-img-overlay">
+          <h5 class="card-title text-white">Porch Enclosure</h5>
+            <button data-toggle="modal" data-target="#servicesModal" data-desc="Enhance your outdoor experience, add a touch of elegance and increase the privacy of your home or cottage deck with a frameless glass windscreen or glass railing system. We offer a wide range of options and designs, and our team of skilled specialists ensures professional, safe installation." data-img="@Url.Content("~/img/porch-bg.jpg")" data-name="Porch Enclosure"  class="btn btn-link text-dark stretched-link"></a>
+        </div>
     </div>
       <div class="card">
       <img src="@Url.Content("~/img/partition-bg.jpg")" class="card-img" alt="...">
       <div class="card-img-overlay">
       <h5 class="card-title text-white">Custom Glass Partition</h5>
+      <button data-toggle="modal" data-target="#servicesModal" data-img="@Url.Content("~/img/partition-bg.jpg")" data-name="Custom Glass Partition"  class="btn btn-link text-dark stretched-link"></a>
     </div>
     </div>
   </section>
 </div>
-<div class="fixed-bottom mb-5 mr-5" style="right:0">
+<div class="fixed-bottom mb-5 mr-5">
         <button class="btn-floating-cta btn btn-lg px-4 text-uppercase text-white float-right">
             <div class="text-center">
                 <i class="far fa-calendar-check"></i>
@@ -47,3 +63,65 @@
             </div>
         </button>
 </div>
+
+ <div class="modal fade pr-0" id="servicesModal" tabindex="-1" role="dialog" aria-labelledby="servicesModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-full-width bg-black">
+            <div class="modal-content modal-content-full-width" style="">
+                <div class="modal-header border-0 text-white">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body border-0">
+                  <div class="loading min-vh-100 w-100 bg-white d-flex justify-content-center align-items-center position-absolute" style="z-index: 1089;">
+                      <img src="@Url.Content("~/img/loading.gif")" height="50" width="50" alt="loading">
+                  </div>
+                  <div class="card">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="#" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Title Not Found</h5>
+                          <p class="card-text">Description Not Found</p>
+                            <button class="btn-floating-cta btn btn-lg px-4 text-uppercase text-white float-right m-2">
+                              <div class="text-center">
+                                <i class="far fa-calendar-check"></i>
+                              <span class="d-block" style="font-size: .7rem;">Book Now</span>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+      <script>
+        $(()=> {
+          $('#servicesModal').on('shown.bs.modal',function (event){
+            var button = $(event.relatedTarget) 
+              var img = button.data('img')       
+              var name = button.data('name') 
+              var desc = button.data('desc') 
+              console.log(img);
+              var modal = $(this);
+              modal.find('img.card-img').attr('src',img);
+              modal.find('.card-title').text(name);
+              modal.find('.card-text').text(desc);
+          });
+
+          $('#servicesModal').on('hide.bs.modal',function (){
+              var modal = $(this);
+              modal.find('img').attr('src','...');
+              modal.find('.card-title ').text('');
+              modal.find('.loading').removeClass('d-none')
+          });
+        });
+      </script>
+    }
