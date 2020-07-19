@@ -105,9 +105,6 @@ label {
     color:var(--red);
 }
 
-.card-columns .card{
-    filter: grayscale(100);
-}
 
 .card-columns .card:hover,.card-columns .card:active{
     filter: grayscale(0);
