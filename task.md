@@ -16,8 +16,8 @@ Pages and all its section
 
 **Showcase of Work**
 
-- [ ] Import Images under showcase dir of img
-- [ ] Layout each Images side by side with before and after using beer js
+- [x] Import Images under showcase dir of img
+- [x] Layout each Images side by side with before and after using beer js
 - [ ] Add animation effects
 
 # General
