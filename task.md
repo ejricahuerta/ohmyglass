@@ -20,7 +20,7 @@ Pages and all its section
 - [ ] Layout each Images side by side with before and after using beer js
 - [ ] Add animation effects
 
-**General**
+# General
 - [ ] Enable SEO
 - [ ] Include Calendy for Bookings
 - [ ] Integrate Google Calendar
