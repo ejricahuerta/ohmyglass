@@ -31,7 +31,7 @@ h5,
 h6,
 label {
     font-family: 'Nunito Sans', sans-serif;
-    color: rgba(0, 148, 255,1);
+    color: rgba(220, 38, 41, 1);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -41,7 +41,7 @@ label {
 }
 
 .navbar-main {
-    background: rgba(189, 208, 222, 0.5);
+    background: rgba(220, 38, 41, 0.78);
     border: 1px solid #E8E8E8;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
@@ -51,7 +51,7 @@ label {
 }
 
     .call-to-action-container a {
-        background: rgba(0, 148, 255, 0.32);
+        background: rgba(220, 38, 41, 0.78);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 84.5px;
         font-size: 2rem;
@@ -103,7 +103,7 @@ label {
 .card .card-transparent-icon{
     margin-top:3rem;
     font-size:3rem;
-    color:var(--red);
+    color:var(--light);
 }
 
 
