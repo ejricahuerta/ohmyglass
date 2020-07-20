@@ -17,6 +17,7 @@ html {
         font-size: 14px;
     }
 }
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
@@ -50,18 +51,19 @@ label {
     background: rgba(189, 208, 222, -1);
 }
 
-    .call-to-action-container a {
-        background: rgba(220, 38, 41, 0.78);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 84.5px;
-        font-size: 2rem;
-    }
-    .btn-floating-cta {
-        background: rgba(0, 148, 255, .8);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 40.5px;
-        font-size: 1.5rem;
-    }
+.call-to-action-container a {
+    background: rgba(220, 38, 41, 0.78);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 84.5px;
+    font-size: 2rem;
+}
+
+.btn-floating-cta {
+    background: rgba(220, 38, 41, 0.78);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40.5px;
+    font-size: 1.5rem;
+}
 
 .bg-blur {
     background-color: rgba(0, 148, 255, 0.1);
@@ -72,21 +74,22 @@ label {
     color: var(--light);
 }
 
-.bg-trans1{
+.bg-trans1 {
     background: rgba(189, 208, 222, 0.32) !important;
     border: 1px solid #E8E8E8;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;    
+    border-radius: 20px;
 }
+
 .our-services {
     background: url(../img/scott-webb-ICypnq9qZH8-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     overflow: hidden;
-   
+
 }
 
-.services .card-img{
+.services .card-img {
     filter: grayscale(.5) !important;
 }
 
@@ -95,19 +98,20 @@ label {
     border: 1px solid #E8E8E8;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    color:#ffffff;
+    color: #ffffff;
     height: 300px;
     width: 300px;
 }
 
-.card .card-transparent-icon{
-    margin-top:3rem;
-    font-size:3rem;
-    color:var(--light);
+.card .card-transparent-icon {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: var(--light);
 }
 
 
-.card-columns .card-services.card:hover,.card-columns .card-services.card:active{
+.card-columns .card-services.card:hover,
+.card-columns .card-services.card:active {
     filter: grayscale(0);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     transition: all .5s;
@@ -118,11 +122,11 @@ label {
     height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    max-width:none !important;
+    max-width: none !important;
 
 }
 
-.modal-content-full-width  {
+.modal-content-full-width {
     height: auto !important;
     min-height: 100% !important;
     border-radius: 0 !important;

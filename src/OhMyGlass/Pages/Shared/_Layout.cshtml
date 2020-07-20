@@ -13,7 +13,6 @@
     <title>Oh! My Glass | @ViewBag.Title</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
@@ -26,10 +25,19 @@
     <div class="loading min-vh-100 w-100 bg-white d-flex justify-content-center align-items-center position-fixed" style="z-index: 1089;">
         <img src="@Url.Content("~/img/loading.gif")" height="50" width="50" alt="loading">
     </div>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="sticky-top">
+    @if(!Context.Request.Path.ToString().Contains("Services")){
+    <nav class="navbar navbar-dark bg-danger text-light d-md-none d-sm-block" style="background-color:rgba(220, 38, 41, 0.78)">
+        <a class="btn btn-link text-light w-100" title="Book Now" href="https://calendly.com/ohmyglass/free-estimate">
+           Ready to Book with us? Click here to for your Free Estimate
+        </a>
+    </nav>
+    }
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="@Url.Content("~/img/logo.png")" class="img-logo" alt="~/img/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#menuModal" aria-controls="main_nav_collapse_content" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler text-danger border-0" type="button" data-toggle="modal" data-target="#menuModal" aria-controls="main_nav_collapse_content" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-danger"></i>
+    
         </button>
         <div class="collapse navbar-collapse" id="main_nav_collapse">
             <ul class="navbar-nav mr-auto text-center">
@@ -64,6 +72,7 @@
             </div>
         </div>
     </nav>
+    </div>
     <div class="h-100">
         <main role="main">
             @RenderBody()
@@ -82,13 +91,12 @@
             </div>
         </div>
     </footer>
-
     <div class="modal fade pr-0" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-full-width bg-black">
             <div class="modal-content modal-content-full-width">
                 <div class="modal-header border-0 text-white">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                   <i class="fas fa-times" style="color:rgba(220, 38, 41, 1); font-size:2rem;"></i>
                     </button>
                 </div>
                 <div class="modal-body border-0 h-100">
@@ -111,6 +119,13 @@
                             <a class="nav-link" href="@Url.Content("~/Showcase")">
                                 <h3 class="mb-0">
                                     Our Work
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="nav-item py-3">
+                            <a class="nav-link" href="https://calendly.com/ohmyglass/free-estimate">
+                                <h3 class="mb-0">
+                                    Book Now
                                 </h3>
                             </a>
                         </li>
